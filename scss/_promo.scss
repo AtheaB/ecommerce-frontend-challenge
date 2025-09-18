@@ -1,17 +1,17 @@
 .promo-bar {
   width: 100%;
-  height: 27px;
+  height: 1.6875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $color-yellow;
 
-  span {
+  &__text {
     font-family: $font-roboto-mono;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $weight-bold;
     color: $color-dark;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03125rem;
     line-height: 1.2;
     text-transform: uppercase;
   }
