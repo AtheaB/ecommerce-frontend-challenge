@@ -1,3 +1,50 @@
-.site-header {
-  // TODO: Add header styles
+.header {
+  background: $color-white;
+  padding: 0.3125rem 1.1875rem;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1.8125rem;
+  }
+
+  &__button {
+    background-color: $color-dark;
+    color: $inverse-text;
+    padding: 0.9375rem 3rem;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__cart {
+    position: relative;
+    cursor: pointer;
+    margin-right: 0.5rem;
+
+    &-count {
+      position: absolute;
+      top: -0.625rem;
+      right: -0.5rem;
+      background: #000;
+      color: $inverse-text;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
 }
