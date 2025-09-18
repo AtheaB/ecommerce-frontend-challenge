@@ -1,13 +1,9 @@
 // Import variables, mixins, and section styles
 @import 'variables';
+@import 'typography';
 @import 'mixins';
 @import 'header';
 @import 'hero';
 @import 'footer';
 
 // Global styles
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-}

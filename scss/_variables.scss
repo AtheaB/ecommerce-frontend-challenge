@@ -1,6 +1,78 @@
-// Color variables
-$color-primary: #0c1d2f;
-$color-accent: #ffcc00;
-$color-bg-light: #f8f9fa;
-$color-text-dark: #111;
-$color-text-light: #fff;
+// ---------------------------------------
+// Base Palette
+// ---------------------------------------
+$color-white: #ffffff;
+$color-offwhite: #fffaf6;
+$color-black: #2e302e;
+$color-dark-gray: #434c6c;
+$color-dark-blue: #002657;
+$color-yellow: #ffba00;
+$color-light-bg: #eff7fa;
+$color-dark-bg: #292A35;
+$color-footer-dark: #222430;
+
+// ---------------------------------------
+// Font Families
+// ---------------------------------------
+$font-inter: 'Inter', sans-serif;
+$font-roboto-mono: 'Roboto Mono', monospace;
+$font-aber-mono: 'Aber Mono', monospace;
+
+// ---------------------------------------
+// Font Weights
+// ---------------------------------------
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// ---------------------------------------
+// Semantic Fonts
+// ---------------------------------------
+$heading-primary: $font-inter;
+$heading-secondary: $font-aber-mono;
+$body-text: $font-roboto-mono;
+
+// ---------------------------------------
+// Semantic Text Weights
+// ---------------------------------------
+$weight-regular: $font-weight-regular;
+$weight-semi: $font-weight-semibold;
+$weight-bold: $font-weight-bold;
+$weight-black: $font-weight-black;
+
+// ---------------------------------------
+// Semantic Colors
+// ---------------------------------------
+$primary-bg: $color-white;
+$secondary-bg: $color-light-bg;
+
+$primary-text: $color-black;
+$secondary-text: $color-dark-gray;
+$inverse-text: $color-white;       // text on dark bg
+$highlight-text: $color-offwhite;  // hero title
+
+$accent-primary: $color-yellow;    // promo + hero btn
+
+// Section-specific
+$products-bg: $color-dark-bg;
+$footer-bg: $color-footer-dark;
+
+// ---------------------------------------
+// Font-face (Aber Mono)
+// ---------------------------------------
+@font-face {
+  font-family: 'Aber Mono';
+  src: url('../assets/fonts/Aber-Mono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aber Mono';
+  src: url('../assets/fonts/Aber-Mono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
