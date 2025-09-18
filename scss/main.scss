@@ -8,3 +8,8 @@
 @import 'footer';
 
 // Global styles
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
