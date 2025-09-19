@@ -44,6 +44,9 @@ p {
   .container {
     padding: 0 5.5rem;
   }
+  .container--flush {
+    padding: 0;
+  }
 }
 
 .divider {
@@ -730,7 +733,8 @@ p {
 
 .bundle {
   background: #ffffff;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border: 0.0625rem solid #2e302e;
   margin-top: 1.5rem;
 }
@@ -755,6 +759,7 @@ p {
   padding: 0.4rem 1rem;
   border-radius: 999px;
   margin-bottom: 1.75rem;
+  text-align: center;
 }
 .bundle__title {
   font-family: "Inter", sans-serif;
