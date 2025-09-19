@@ -1,0 +1,125 @@
+.steps {
+  background: $secondary-bg;
+  padding: 3rem 0; // 48px
+
+  &__intro {
+    margin-bottom: 1rem; // 16px
+
+    .steps__subtitle {
+      font-family: $body-text;
+      font-size: 0.95rem; // ~15px
+      color: $secondary-text;
+      margin-bottom: 1rem; // 16px
+
+      @media (min-width: 640px) {
+        margin-bottom: 2.31rem; // 37px
+      }
+    }
+
+    .steps__icon {
+      display: block;
+      margin: 0 auto 1rem; // 16px
+      width: 6.94rem; // 111px
+      height: 7.38rem; // 118px
+
+      @media (min-width: 640px) {
+        margin: 0 auto 2.81rem; // 45px
+      }
+    }
+
+    .steps__title {
+      font-family: $heading-primary;
+      font-weight: $weight-black;
+      font-size: 1.75rem; // 28px
+      letter-spacing: -0.083rem; // -1.33px
+      line-height: 3.25rem; // 52px
+      text-transform: uppercase;
+      color: $primary-text;
+      margin: 0;
+
+      @media (min-width: 640px) {
+        font-size: 5rem; // 80px
+      }
+    }
+
+    @media (min-width: 640px) {
+      font-size: 7.25rem; // 116px
+      margin-bottom: 5.63rem; // 90px
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; // 32px
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8.31rem; // 133px
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: 1rem; // 16px
+    overflow: hidden;
+    margin-bottom: 1.38rem; // 22px
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3.13rem; // 50px
+
+    @media (min-width: 768px) {
+      width: 20.81rem; // 333px
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 1.63rem; // 26px
+    left: 1.63rem; // 26px
+    width: 3.13rem; // 50px
+    height: 3.13rem; // 50px
+    border-radius: 50%;
+    background: $primary-bg;
+    color: $primary-text;
+    font-family: $font-inter;
+    font-weight: $weight-black;
+    font-size: 1.63rem; // 26px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.094rem solid #000; // 1.5px
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; // 16px
+
+    @media (min-width: 640px) {
+      gap: 1.75rem; // 28px
+    }
+  }
+
+  &__product {
+    max-width: 4rem; // 64px
+    height: auto;
+  }
+
+  &__text {
+    font-family: $body-text;
+    font-size: 1.125rem; // 18px
+    line-height: 1.5;
+    color: $primary-text;
+    margin: 0;
+  }
+
+  @media (min-width: 640px) {
+    padding: 3rem 0 5.31rem; // 48px 0 85px
+  }
+}

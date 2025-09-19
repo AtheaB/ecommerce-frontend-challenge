@@ -8,8 +8,10 @@ $color-dark-gray: #434c6c;
 $color-dark-blue: #002657;
 $color-yellow: #ffba00;
 $color-light-bg: #eff7fa;
-$color-dark-bg: #292A35;
+$color-dark-bg: #292a35;
 $color-dark: #222430;
+$color-charcoal-green: #1d3c34;
+$color-divider: #464f6e;
 
 // ---------------------------------------
 // Font Families
@@ -49,10 +51,10 @@ $secondary-bg: $color-light-bg;
 
 $primary-text: $color-black;
 $secondary-text: $color-dark-gray;
-$inverse-text: $color-white;       // text on dark bg
-$highlight-text: $color-offwhite;  // hero title
+$inverse-text: $color-white; // text on dark bg
+$highlight-text: $color-offwhite; // hero title
 
-$accent-primary: $color-yellow;    // promo + hero btn
+$accent-primary: $color-yellow; // promo + hero btn
 
 // Section-specific
 $products-bg: $color-dark-bg;
