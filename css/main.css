@@ -843,4 +843,95 @@ p {
   }
 }
 
+.ingredients {
+  margin: 1.5rem 0;
+}
+.ingredients__intro {
+  text-align: left;
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 640px) {
+  .ingredients__intro {
+    margin-bottom: 56px;
+  }
+}
+.ingredients__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  color: #2e302e;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  .ingredients__title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+  }
+}
+.ingredients__button {
+  display: inline-block;
+  background: #ffba00;
+  color: #2e302e;
+  font-size: 18px;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.ingredients__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .ingredients__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .ingredients__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.ingredients__card {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  text-align: left;
+}
+.ingredients__image {
+  flex-shrink: 0;
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+.ingredients__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.ingredients__name {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  color: #434c6c;
+}
+.ingredients__desc {
+  font-family: "Aber Mono", monospace;
+  font-size: 12px;
+  color: #434c6c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 640px) {
+  .ingredients {
+    padding: 99px 0 104px 0;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
