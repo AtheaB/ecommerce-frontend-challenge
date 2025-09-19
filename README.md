@@ -1,56 +1,80 @@
-# E-commerce Frontend Challenge
+# 🛒 E-commerce Frontend Challenge
 
 This repository contains my submission for the **24-hour eCommerce Front End Developer Code Challenge**.  
-The goal is to build a responsive, pixel-perfect homepage based on the provided design mockup.
+The objective was to build a **responsive, pixel-perfect homepage** based on the provided design mockup, using modern front-end best practices.
 
 ---
 
 ## 🚀 Tech Stack
-- HTML5  
-- SCSS (Sass)  
-- Foundation Framework (Grid & Utilities)  
-- JavaScript (for interactions)  
-- Flickity (for carousels, if needed)  
-- Google Fonts  
+
+- **HTML5** – semantic structure
+- **SCSS (Sass)** – modular, component-based styling
+- **Foundation Framework** – grid system & utilities
+- **JavaScript (ES6)** – interactions & DOM scripting
+- **Flickity** – lightweight, touch-friendly carousel
+- **Google Fonts** – typography
 
 ---
 
 ## 📂 Project Structure
+
 ```
-/scss       → SCSS partials (variables, mixins, components)
-/css        → Compiled CSS
-/js         → JavaScript files
-/images     → Assets from design mockup
-index.html  → Homepage implementation
+/scss         → SCSS partials (variables, mixins, components)
+/css          → Compiled CSS
+/assets       → Images & icons, and Fonts from design mockup
+index.html    → Homepage implementation
 ```
 
 ---
 
-## 🛠 Setup Instructions
-1. Clone this repository:
+## ⚙️ Setup & Usage
+
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/<your-username>/ecommerce-frontend-challenge.git
-   ```
-2. Navigate to the project folder:
-   ```bash
    cd ecommerce-frontend-challenge
    ```
-3. Run SCSS compiler (make sure you have Sass installed globally):
+
+2. **Compile SCSS → CSS**  
+   Make sure Sass is installed globally:
+
+   ```bash
+   npm install -g sass
+   ```
+
+   Then run:
+
    ```bash
    sass scss/main.scss css/main.css --watch
    ```
-4. Open `index.html` in your browser.
+
+3. **Open the project**  
+   Simply open `index.html` in your browser.
 
 ---
 
-## 🎥 Demo Video
-A video walkthrough will be recorded as part of the submission, covering:
-- **Part 1**: Website demo (features and responsiveness)  
-- **Part 2**: Code structure, design choices, and best practices  
+## 📱 Features
+
+- **Responsive Design** → Mobile-first, scales to desktop seamlessly
+- **Pixel-perfect Layout** → Matches the provided Sketch mockup
+- **BEM Naming Convention** → Consistent, scalable class structure
+- **Reusable SCSS Variables** → Colors, typography, spacing centralized
+- **Modern Practices** → Semantic HTML5, flexbox & CSS grid
 
 ---
 
-## 📌 Notes
-- Built with a **mobile-first approach**  
-- Structured for **scalability and maintainability**  
-- Uses **semantic HTML5** and modern front-end development practices
+## 🎥 Demo
+
+📌 (Optional: Add a GIF or link to your recorded walkthrough video here)
+
+---
+
+## 📝 Notes
+
+- Built with a **scalable SCSS architecture** (`_variables.scss`, `_mixins.scss`, `_components.scss`)
+- Media queries are written **inline within components** for modularity
+
+---
+
+✅ **In summary**: This project demonstrates a clean, maintainable, and scalable approach to front-end development, balancing **design accuracy**, **responsive behavior**, and **code organization**.
