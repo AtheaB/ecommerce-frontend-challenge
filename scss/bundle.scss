@@ -1,0 +1,125 @@
+.bundle {
+  background: $color-white;
+  padding: 1.5rem; // 24px
+  border: 0.0625rem solid $color-black; // 1px
+  margin-top: 1.5rem; // 24px
+
+  &__container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; // 32px
+    align-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 9.6875rem; // 155px
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    background: $accent-primary;
+    color: $primary-text;
+    font-size: 1.125rem; // 18px
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.75rem; // 28px
+  }
+
+  &__title {
+    font-family: $heading-primary;
+    font-weight: $weight-black;
+    font-size: 1.75rem; // 28px
+    color: $primary-text;
+    margin-bottom: 1rem; // 16px
+    text-transform: uppercase;
+
+    @media (min-width: 640px) {
+      font-size: 3.125rem; // 50px
+      line-height: 3.25rem; // 52px
+      margin-bottom: 1.375rem; // 22px
+    }
+  }
+
+  &__text {
+    font-family: $body-text;
+    font-size: 1.125rem; // 18px
+    line-height: 1.5rem; // 24px
+    color: $primary-text;
+    margin-bottom: 1.5rem; // 24px
+  }
+
+  hr {
+    border-color: #1d3c34;
+    opacity: 0.1;
+    margin: 1.375rem 3.0625rem 1.375rem 0; // 22px 49px 22px 0
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.8125rem; // 29px
+
+    .bundle__feature {
+      position: relative;
+      padding-left: 2rem; // 32px
+      font-family: $body-text;
+      font-size: 1.125rem; // 18px
+      color: $primary-text;
+      margin-bottom: 1rem; // 16px
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.3rem;
+        width: 1.375rem; // 22px
+        height: 1.375rem; // 22px
+        background: url('/assets/images/icons/check.svg') no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem; // 16px
+  }
+
+  &__button {
+    background: $primary-text;
+    color: $inverse-text;
+    font-size: 1.125rem; // 18px
+    padding: 0.875rem 1.5rem; // 14px 24px
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken($primary-text, 10%);
+    }
+  }
+
+  &__price-old {
+    font-size: 1rem; // 16px
+    color: $secondary-text;
+    text-decoration: line-through;
+  }
+
+  &__media {
+    text-align: center;
+
+    .bundle__image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 640px) {
+    padding: 4.9375rem 0 4.25rem; // 79px 0 68px
+    margin: 0;
+  }
+}

@@ -549,7 +549,7 @@ p {
 .results__title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   color: #2e302e;
 }
@@ -603,9 +603,6 @@ p {
 }
 .results__features {
   overflow: hidden;
-  background: #eff7fa;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .results__features .results__track {
   display: flex;
@@ -648,6 +645,201 @@ p {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+.benefits__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.333;
+  color: #2e302e;
+  margin-bottom: 0.9375rem;
+  letter-spacing: -0.0519rem;
+  text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  .benefits__title {
+    font-size: 3.125rem;
+    line-height: 3.25rem;
+  }
+}
+.benefits__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2e302e;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .benefits__text {
+    margin-bottom: 3.125rem;
+  }
+}
+.benefits__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .benefits__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.3125rem;
+    align-items: start;
+  }
+}
+.benefits__card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+}
+.benefits__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.1875rem;
+  margin-bottom: 2.0625rem;
+}
+.benefits__heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 1.4375rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  color: #2e302e;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.4em;
+}
+.benefits__desc {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #434c6c;
+  margin: 0;
+  margin-top: auto;
+}
+@media (min-width: 640px) {
+  .benefits {
+    padding: 3.125rem 0 5.625rem;
+  }
+}
+
+.bundle {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 0.0625rem solid #2e302e;
+  margin-top: 1.5rem;
+}
+.bundle__container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .bundle__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6875rem;
+  }
+}
+.bundle__badge {
+  display: inline-block;
+  background: #ffba00;
+  color: #2e302e;
+  font-size: 1.125rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.75rem;
+}
+.bundle__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #2e302e;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  .bundle__title {
+    font-size: 3.125rem;
+    line-height: 3.25rem;
+    margin-bottom: 1.375rem;
+  }
+}
+.bundle__text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #2e302e;
+  margin-bottom: 1.5rem;
+}
+.bundle hr {
+  border-color: #1d3c34;
+  opacity: 0.1;
+  margin: 1.375rem 3.0625rem 1.375rem 0;
+}
+.bundle__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.8125rem;
+}
+.bundle__features .bundle__feature {
+  position: relative;
+  padding-left: 2rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.125rem;
+  color: #2e302e;
+  margin-bottom: 1rem;
+}
+.bundle__features .bundle__feature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.375rem;
+  height: 1.375rem;
+  background: url("/assets/images/icons/check.svg") no-repeat center;
+  background-size: contain;
+}
+.bundle__cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.bundle__button {
+  background: #2e302e;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.bundle__button:hover {
+  background: rgb(21.0425531915, 21.9574468085, 21.0425531915);
+}
+.bundle__price-old {
+  font-size: 1rem;
+  color: #434c6c;
+  text-decoration: line-through;
+}
+.bundle__media {
+  text-align: center;
+}
+.bundle__media .bundle__image {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 640px) {
+  .bundle {
+    padding: 4.9375rem 0 4.25rem;
+    margin: 0;
   }
 }
 
