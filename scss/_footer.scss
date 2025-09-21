@@ -1,3 +1,220 @@
-.site-footer {
-  // TODO: Add footer styles
+.footer {
+  background: $color-dark;
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; // 16px
+    margin-bottom: 1rem; // 16px
+  }
+
+  .footer__brand {
+    .footer__join {
+      font-family: $heading-primary;
+      font-weight: $font-weight-bold;
+      color: $color-mint-white;
+      font-size: 1.3125rem; // 21px
+      text-transform: uppercase;
+      letter-spacing: -0.01875rem; // -0.3px
+      line-height: 1.3125rem; // 21px
+      margin: 0 0 1.3125rem 0; // 21px
+    }
+
+    .footer__join-desc {
+      margin: 0;
+      font-size: 0.875rem; // 14px
+      color: $color-light-bg;
+      line-height: 1.125rem; // 18px
+    }
+  }
+
+  .footer__logo img {
+    width: 2.625rem; // 42px
+    height: auto;
+    object-fit: contain;
+  }
+
+  .footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; // 24px
+  }
+
+  .footer__form {
+    display: flex;
+    width: 100%;
+    background: $color-mint-white;
+    border: 0.3125rem solid $color-mint-white; // 5px
+    overflow: hidden;
+
+    .footer__input {
+      flex: 1;
+      padding: 1rem; // 31px 16px
+      border: 0;
+      font-family: $body-text;
+      font-size: 0.875rem; // 14px
+      color: $secondary-text;
+      margin: 0;
+      box-shadow: none;
+
+      &::placeholder {
+        color: $secondary-text;
+        opacity: 0.3; // only affects placeholder
+      }
+    }
+
+    .footer__submit {
+      padding: 0 1rem; // 16px
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.125rem; // 18px
+      background: $color-dark-bg;
+      color: $color-mint-white;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer__socials {
+    display: flex;
+    gap: 0.393125rem; // 6.29px
+
+    .footer__social {
+      display: inline-flex;
+      width: 3.1875rem; // 51px
+      height: 3.1875rem; // 51px
+      border-radius: 50%;
+      background: $color-mint-white;
+      align-items: center;
+      justify-content: center;
+      border: 0.063rem solid rgba(0, 0, 0, 0.06); // 1px
+
+      img {
+        width: auto;
+        height: 1.5rem; // 24px
+        display: block;
+      }
+    }
+  }
+
+  .footer__links-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; // 24px
+    margin-top: 1rem; // 16px
+  }
+
+  .footer__links-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; // 16px
+  }
+
+  .footer__links-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0.5rem; // 8px
+  }
+
+  .footer__links {
+    .footer__links-heading {
+      font-family: $heading-primary;
+      font-size: 1.3125rem; // 21px
+      font-weight: $weight-bold;
+      color: $color-mint-white;
+      text-transform: uppercase;
+      margin: 0 0 0.8125rem 0; // 13px
+    }
+
+    .footer__links-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 0 0.125rem 0; // 2px
+
+        a {
+          color: $color-mint-white;
+          font-family: $body-text;
+          font-size: 0.875rem; // 14px
+          text-decoration: none;
+          opacity: 0.4;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    font-size: 0.875rem; // 14px
+    color: $color-mint-white;
+    margin: 0;
+    opacity: 0.4;
+  }
+
+  .footer__disclaimer {
+    border: 0.125rem solid rgba(255, 255, 255, 0.4); // 2px border with opacity
+    opacity: 0.4;
+    border-radius: 1.0625rem; // 17px
+    padding: 0.75rem; // 12px
+    font-size: 0.625rem; // 10px
+    color: $color-white;
+  }
+
+  /* For Larger screens */
+  @media (min-width: 768px) {
+    padding: 3.0625rem 0 4rem; // 49px 0 64px
+
+    .footer__top {
+      margin-bottom: 1.8125rem; // 29px
+    }
+
+    .footer__form {
+      .footer__input {
+        flex: 1;
+        padding: 1.9375rem 1rem; // 31px 16px
+      }
+    }
+
+    .footer__subscribe {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .footer__links-row {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 3.1875rem; // 51px
+    }
+
+    .footer__links-col {
+      flex: 1;
+      gap: 3.3125rem; // 53px
+    }
+
+    .footer__disclaimer {
+      max-width: 18.75rem; // 300px
+    }
+
+    .footer__disclaimer-col {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex: 0 0 36%;
+      margin-top: auto;
+      padding-bottom: 0.5rem; // 8px
+    }
+  }
 }

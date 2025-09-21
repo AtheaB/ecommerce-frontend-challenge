@@ -1,0 +1,209 @@
+.formulas {
+  background: $products-bg;
+
+  &__badge {
+    display: inline-block;
+    background: $accent-primary;
+    color: $primary-text;
+    font-size: 1.125rem; // 18px
+    padding: 0.3125rem 1.75rem 0.5rem 1.375rem; // 5px 28px 8px 22px
+    border-radius: 1.78125rem; // 28.5px
+    margin-bottom: 1.5rem; // 24px
+    line-height: 1.5rem; // 24px
+
+    @media (min-width: 768px) {
+      margin-bottom: 4.09375rem; // 65.5px
+    }
+  }
+
+  &__title {
+    font-family: $heading-primary;
+    font-weight: $weight-black;
+    font-size: 2rem; // 32px
+    letter-spacing: -0.083125rem; // -1.33px
+    text-transform: uppercase;
+    color: $highlight-text;
+    margin-bottom: 0.5rem; // 8px
+
+    @media (min-width: 640px) {
+      font-size: 5rem; // 80px
+      line-height: 3.25rem; // 52px
+      margin-bottom: 1.3125rem; // 21px
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem; // 18px
+    color: $inverse-text;
+
+    .highlight {
+      text-decoration: underline;
+      text-underline-offset: 0.375rem; // 6px
+    }
+  }
+
+  &__grid {
+    margin-top: 1rem; // 16px
+
+    @media (min-width: 640px) {
+      margin-top: 4.0625rem; // 65px
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 6.0625rem; // 97px
+      text-align: left;
+      margin-top: 2.8125rem; // 45px
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 22.3125rem; // 357px
+    order: 1;
+  }
+
+  &__heading {
+    font-family: $heading-primary;
+    font-size: 1.5rem; // 24px
+    font-weight: $weight-black;
+    color: $inverse-text;
+    margin-bottom: 1.125rem; // 18px
+    text-transform: uppercase;
+    letter-spacing: -0.051875rem; // -0.83px
+
+    @media (min-width: 640px) {
+      font-size: 3.125rem; // 50px
+      line-height: 3.25rem; // 52px
+    }
+  }
+
+  &__desc {
+    font-family: $body-text;
+    font-size: 1.125rem; // 18px
+    line-height: 1.5rem; // 24px
+    color: $inverse-text;
+  }
+
+  &__media {
+    text-align: center;
+    order: 2;
+
+    .formulas__image {
+      width: 9.375rem; // 150px
+      height: auto;
+
+      @media (min-width: 640px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__testimonials {
+    margin-top: 1rem; // 16px
+    text-align: center;
+
+    &-intro {
+      font-size: 1.125rem; // 18px
+      color: $accent-primary;
+      margin-bottom: 1rem; // 16px
+
+      @media (min-width: 768px) {
+        margin-bottom: 3.5625rem; // 57px
+      }
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem; // 32px
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem; // 40px
+        padding: 0 2.5rem; // 40px
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 8.6875rem; // 139px
+    }
+  }
+
+  &__testimonial {
+    background: $secondary-bg;
+    border-radius: 2.4375rem; // 39px
+    padding: 1.3125rem 1.75rem; // 21px 28px
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-rating {
+      margin-bottom: 0.9375rem; // 15px
+    }
+
+    &-quote {
+      font-family: $body-text;
+      font-size: 1rem; // 16px
+      line-height: 1.5; // 24px
+      color: $secondary-text;
+      margin-bottom: 1.25rem; // 20px
+    }
+
+    &-author {
+      display: flex;
+      align-items: center;
+      gap: 0.5625rem; // 9px
+      margin-top: auto;
+    }
+
+    &-avatar {
+      width: 3.375rem; // 54px
+      height: 3.375rem; // 54px
+      border: 0.125rem solid $primary-text; // 2px
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: $weight-semi;
+      font-size: 1.5rem; // 24px
+      color: $primary-text;
+      background: $color-white;
+      flex-shrink: 0;
+    }
+
+    &-info {
+      text-align: left;
+    }
+
+    &-name {
+      font-weight: $weight-semi;
+      color: $color-dark-blue;
+      margin: 0 0 0.25rem; // 4px
+      font-size: 0.9375rem; // 15px
+    }
+
+    &-role {
+      font-size: 0.75rem; // 12px
+      color: $color-dark-gray;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: 640px) {
+    padding: 8.53125rem 0 6.59375rem 0; // 136.5px 0 105.5px 0
+  }
+}

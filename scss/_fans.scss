@@ -1,0 +1,236 @@
+.fans {
+  background: $secondary-bg;
+  padding: 1.188rem; // 19px
+
+  &__title {
+    font-family: $heading-primary;
+    font-weight: $weight-black;
+    font-size: 2rem; // 32px
+    text-align: center;
+    margin-bottom: 2rem; // 32px
+    text-transform: uppercase;
+    color: $primary-text;
+
+    @media (min-width: 768px) {
+      font-size: 3rem; // 48px
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; // 32px
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem; // 32px
+    }
+  }
+
+  &__card {
+    border-radius: 1rem; // 16px
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__media {
+    position: relative;
+
+    .fans__image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1.875rem; // 30px
+      border: 0.094rem solid $color-dark-blue; // 1.5px
+    }
+
+    .fans__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4.25rem; // 68px
+      height: 4.25rem; // 68px
+      border-radius: 50%;
+      background: $primary-bg;
+      border: 0.094rem solid $color-dark-blue; // 1.5px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .fans__mute {
+      position: absolute;
+      top: 0.938rem; // 15px
+      right: 0.938rem; // 15px
+      background: $primary-bg;
+      border-radius: 50%;
+      padding: 0.5rem; // 8px
+      cursor: pointer;
+      border: 0.094rem solid $color-dark-blue; // 1.5px
+    }
+
+    .fans__info {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+      width: calc(100% - 1.25rem); // 20px
+      padding: 0 1rem; // 16px
+      background: $primary-bg;
+      border-radius: 1.25rem; // 20px
+      margin: 0.625rem; // 10px
+    }
+  }
+
+  &__name {
+    font-size: 0.938rem; // 15px
+    font-weight: $weight-semi;
+    margin: 0;
+    color: $color-dark-blue;
+  }
+
+  &__price {
+    font-size: 0.875rem; // 14px
+    color: $color-dark-gray;
+    margin-bottom: 0.25rem; // 4px
+  }
+
+  &__add {
+    background: $primary-text;
+    color: $inverse-text;
+    font-size: 0.875rem; // 14px
+    padding: 0.875rem 2.063rem; // 14px 33px
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+  }
+
+  // Fans-set block
+  .fans-set {
+    padding: 1rem 0;
+    @media (min-width: 768px) {
+      padding: 9.875rem 0 0; // 158px
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; // 32px
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12.563rem; // 201px
+        padding: 0 7.75rem 0 6.688rem; // 124px 0 107px
+      }
+    }
+
+    &__content {
+      flex: 1;
+      max-width: 24.563rem; // 393px
+      text-align: left;
+    }
+
+    &__subtitle {
+      font-size: 1.125rem; // 18px
+      color: $secondary-text;
+      margin-bottom: 0.938rem; // 15px
+    }
+
+    &__title {
+      font-family: $heading-primary;
+      font-size: 1.75rem; // 28px
+      font-weight: $weight-black;
+      text-transform: uppercase;
+      color: $primary-text;
+      margin-bottom: 1.5rem; // 24px
+
+      @media (min-width: 768px) {
+        font-size: 3.125rem; // 50px
+        line-height: 3.25rem; // 52px
+        letter-spacing: -0.052rem; // -0.83px
+        margin-bottom: 2.063rem; // 33px
+      }
+    }
+
+    &__desc {
+      font-size: 1.125rem; // 18px
+      color: $secondary-text;
+      margin-bottom: 1.813rem; // 29px
+      line-height: 1.5rem; // 24px
+
+      @media (min-width: 768px) {
+        padding-right: 2.188rem; // 35px
+      }
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2.063rem 0; // 33px
+
+      li {
+        position: relative;
+        padding-left: 1.875rem; // 30px
+        margin-bottom: 0.25rem; // 4px
+        font-size: 1.125rem; // 18px
+        color: $secondary-text;
+        border-bottom: 1px solid rgba(29, 60, 52, 0.1);
+        padding-bottom: 0.75rem; // 12px
+        margin-right: 2.188rem; // 35px
+
+        &:last-child {
+          border-bottom: none;
+          margin: 0;
+          padding-bottom: 0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0.25rem; // 4px
+          width: 1.188rem; // 19px
+          height: 1.188rem; // 19px
+          background: url(/assets/images/icons/check.svg) no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &__cta {
+      display: inline-block;
+      background: $color-dark;
+      color: $inverse-text;
+      font-size: 1.125rem; // 18px
+      padding: 1rem 2.5rem; // 16px 40px
+      border: none;
+      border-radius: 2.188rem; // 35px
+      cursor: pointer;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    &__media {
+      flex: 1;
+      text-align: center;
+
+      .fans-set__image {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 6.75rem 1.188rem; // 108px 19px
+  }
+}
