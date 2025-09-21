@@ -1,9 +1,6 @@
 .bundle {
   background: $color-white;
-  padding-top: 1.5rem; // 24px
-  padding-bottom: 1.5rem; // 24px
   border: 0.0625rem solid $color-black; // 1px
-  margin-top: 1.5rem; // 24px
 
   &__container {
     margin: 0 auto;
@@ -99,10 +96,6 @@
     border-radius: 999px;
     cursor: pointer;
     transition: background 0.3s;
-
-    &:hover {
-      background: darken($primary-text, 10%);
-    }
   }
 
   &__price-old {

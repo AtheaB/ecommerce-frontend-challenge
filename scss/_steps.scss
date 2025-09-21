@@ -1,6 +1,5 @@
 .steps {
   background: $secondary-bg;
-  padding: 3rem 0; // 48px
 
   &__intro {
     margin-bottom: 1rem; // 16px
@@ -71,10 +70,6 @@
     width: 100%;
     height: auto;
     border-radius: 3.13rem; // 50px
-
-    @media (min-width: 768px) {
-      width: 20.81rem; // 333px
-    }
   }
 
   &__number {
@@ -120,6 +115,6 @@
   }
 
   @media (min-width: 640px) {
-    padding: 3rem 0 5.31rem; // 48px 0 85px
+    padding: 7.25rem 0 5.31rem; // 116px 0 85px
   }
 }
